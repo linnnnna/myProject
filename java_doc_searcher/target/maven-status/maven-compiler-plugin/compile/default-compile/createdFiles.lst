@@ -1,0 +1,10 @@
+api\DocSearchServlet.class
+parser\Parser.class
+index\Index$Weight.class
+searcher\Searcher.class
+searcher\Searcher$1.class
+index\Index$1WordCnt.class
+Common\DocInfo.class
+index\Index.class
+index\Index$1Timer.class
+searcher\Result.class
