@@ -9,41 +9,39 @@
             margin-right:50px;
         }
         div button {
-            width:50%;
+            height: 38px;
+            width:70px;
+            background-color: cornflowerblue;
+            color: white;
+            border-color: white;
+        }
+        div input {
+            height: 30px;
+            width: 550px;
+            font-size: 16px;
         }
         .row {
             padding-top: 10px;
         }
-        .col-md-5 {
-            padding-left:2px;
-            padding-right:2px;
-        }
-        .col-md-1 {
-            padding-left:2px;
-            padding-right:2px;
-        }
+
         .title {
-            font-size: 22px;
+            color: blue;
+            font-size: 18px;
         }
         .desc {
-            font-size: 18px;
+            font-size: 14px;
         }
         .url {
-            font-size: 18px;
+            font-size: 14px;
             color: green;
         }
     </style>
 </head>
 <body>
 <div id="app">
-    <div class="row">我是 logo</div>
+    <div class="row">Java API 搜索</div>
     <div class="row">
-        <div class="col-md-5">
-            <input type="text" class="form-control" placeholder="请输入关键字" v-model="query">
-        </div>
-        <div class="col-md-1">
-            <button class="btn btn-success" v-on:click="search()">搜索</button>
-        </div>
+        <input type="text" class="form-control" placeholder="请输入关键字" v-model="query"><button class="btn btn-success" v-on:click="search()">搜索</button>
     </div>
     <div class="row" v-for="result in results">
         <!--用来存放结果-->
